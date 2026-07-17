@@ -1,0 +1,52 @@
+:root {
+  --lh-charcoal: #131820;
+  --lh-white: #ffffff;
+  --lh-electric-blue: #0075ff;
+  --lh-emerald: #0dbb7b;
+  --lh-amber: #f7a014;
+  --lh-muted: #6d7788;
+  --lh-border: #d8deea;
+}
+
+@theme inline {
+  --color-lh-charcoal: var(--lh-charcoal);
+  --color-lh-white: var(--lh-white);
+  --color-lh-electric-blue: var(--lh-electric-blue);
+  --color-lh-emerald: var(--lh-emerald);
+  --color-lh-amber: var(--lh-amber);
+  --color-lh-muted: var(--lh-muted);
+  --color-lh-border: var(--lh-border);
+}
+
+.card {
+  background: var(--lh-white);
+  border: 1px solid var(--lh-border);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+@keyframes liftIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  animation: liftIn 420ms ease both;
+}

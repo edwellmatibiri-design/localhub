@@ -1,0 +1,9 @@
+{
+  "framework": "nextjs",
+  "regions": ["jnb1"],
+  "functions": {
+    "src/pages/api/**/*.ts": {
+      "maxDuration": 30
+    }
+  }
+}

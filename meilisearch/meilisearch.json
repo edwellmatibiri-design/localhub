@@ -1,0 +1,7 @@
+{
+  "env": "development",
+  "http_addr": "0.0.0.0:7700",
+  "db_path": "./data.ms",
+  "max_indexing_memory": "1Gb",
+  "max_indexing_threads": 4
+}
