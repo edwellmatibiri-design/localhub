@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@import "./theme.css";
+
+[data-theme="light"] {
+  --lh-bg: #f9fafb;
+  --lh-surface: #ffffff;
+  --lh-surface-soft: #f3f4f6;
+  --lh-border: #e5e7eb;
+  --lh-accent: #2563eb;
+  --lh-accent-soft: #1d4ed8;
+  --lh-accent-muted: #93c5fd;
+  --lh-text-primary: #0f172a;
+  --lh-text-secondary: #6b7280;
+  --lh-on-accent: #ffffff;
+  --lh-danger: #b91c1c;
+  --lh-success: #15803d;
+  --lh-warning: #c2410c;
+}
+
+body {
+  background-color: var(--lh-bg);
+  color: var(--lh-text-primary);
+  font-family: system-ui, "SF Pro Text", Inter, sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+.shell {
+  width: min(1200px, calc(100% - 2rem));
+  margin: 1.5rem auto;
+  background: color-mix(in srgb, var(--lh-surface-soft) 92%, transparent);
+  border: 1px solid var(--lh-border);
+  border-radius: 1.25rem;
+  box-shadow: 0 30px 60px -40px #0f172a4d;
+}

@@ -1,0 +1,75 @@
+:root {
+  --lh-bg: #050816;
+  --lh-surface: #0b1020;
+  --lh-surface-soft: #111827;
+  --lh-border: #1f2937;
+  --lh-accent: #3b82f6;
+  --lh-accent-soft: #1d4ed8;
+  --lh-accent-muted: #93c5fd;
+  --lh-text-primary: #f9fafb;
+  --lh-text-secondary: #9ca3af;
+  --lh-on-accent: #ffffff;
+  --lh-danger: #ef4444;
+  --lh-success: #22c55e;
+  --lh-warning: #f97316;
+
+  /* Compatibility aliases used by older component styles. */
+  --lh-white: var(--lh-on-accent);
+  --lh-emerald: var(--lh-success);
+  --lh-amber: var(--lh-warning);
+  --lh-muted: var(--lh-text-secondary);
+}
+
+@theme inline {
+  --color-lh-bg: var(--lh-bg);
+  --color-lh-surface: var(--lh-surface);
+  --color-lh-surface-soft: var(--lh-surface-soft);
+  --color-lh-border: var(--lh-border);
+  --color-lh-accent: var(--lh-accent);
+  --color-lh-accent-soft: var(--lh-accent-soft);
+  --color-lh-accent-muted: var(--lh-accent-muted);
+  --color-lh-text-primary: var(--lh-text-primary);
+  --color-lh-text-secondary: var(--lh-text-secondary);
+  --color-lh-on-accent: var(--lh-on-accent);
+  --color-lh-danger: var(--lh-danger);
+  --color-lh-success: var(--lh-success);
+  --color-lh-warning: var(--lh-warning);
+
+  --color-lh-white: var(--lh-white);
+  --color-lh-emerald: var(--lh-emerald);
+  --color-lh-amber: var(--lh-amber);
+  --color-lh-muted: var(--lh-muted);
+}
+
+.card {
+  background: var(--lh-surface);
+  border: 1px solid var(--lh-border);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+@keyframes liftIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  animation: liftIn 420ms ease both;
+}

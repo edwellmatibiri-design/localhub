@@ -1,0 +1,16 @@
+export default function MessageInput() {
+  return (
+    <form className="mt-3 flex gap-2">
+      <input
+        className="border-lh-border bg-lh-surface-soft text-lh-text-primary placeholder:text-lh-text-secondary focus:ring-lh-accent w-full rounded-2xl border px-4 py-2 text-sm focus:ring-2 focus:outline-none"
+        placeholder="Type your message"
+      />
+      <button
+        className="bg-lh-accent text-lh-on-accent rounded-2xl px-4 py-2 text-sm font-medium"
+        type="submit"
+      >
+        Send
+      </button>
+    </form>
+  );
+}

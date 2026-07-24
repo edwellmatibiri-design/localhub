@@ -1,0 +1,49 @@
+{
+  "name": "localhub",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "seed:categories": "tsx scripts/seedCategories.ts",
+    "seed:vendors": "tsx scripts/seedVendors.ts",
+    "seed:sellers": "tsx scripts/seedSellers.ts",
+    "seed:listings": "tsx scripts/seedListings.ts",
+    "seed:flows": "tsx scripts/seedMarketplaceFlows.ts",
+    "seed:crawler": "tsx scripts/seedCrawlerDemo.ts",
+    "seed:all": "tsx scripts/seedAll.ts"
+  },
+  "dependencies": {
+    "@stripe/react-stripe-js": "^6.8.0",
+    "@stripe/stripe-js": "^9.10.0",
+    "@supabase/supabase-js": "^2.57.4",
+    "dayjs": "^1.11.18",
+    "groq-sdk": "^1.3.0",
+    "meilisearch": "^0.54.0",
+    "next": "16.2.10",
+    "node-cron": "^4.2.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-hot-toast": "^2.6.0",
+    "stripe": "^22.3.2",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/node-cron": "^3.0.11",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "dotenv": "^17.4.2",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.10",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.23.1",
+    "typescript": "^5"
+  }
+}
